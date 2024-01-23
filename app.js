@@ -1,4 +1,4 @@
-/* Codigo JavaScript de Juego Numero Secreto del curso de Logica de Programación en Alura Oracle Next Education */
+/* Codigo JavaScript de Juego Número Secreto del curso de Logica de Programación en Alura Oracle Next Education */
 //Declaración de variables
 let numeroSecreto = 0;
 let intentos = 0;
@@ -27,9 +27,9 @@ function verificarIntento() {
     } else {
         //El usuario no acerto.
         if(numeroDeUsuario > numeroSecreto ){
-            asignarTextoElemento('p','El numero es menor');
+            asignarTextoElemento('p','El número es menor');
         } else {
-            asignarTextoElemento('p', 'El numero es mayor');
+            asignarTextoElemento('p', 'El número es mayor');
         }
         intentos++;
         limpiarCaja();
@@ -50,7 +50,7 @@ function generarNumeroSecreto() {
     console.log(listaNumeroSorteado);
     //Si ya sorteamos todos los numeros
     if(listaNumeroSorteado == numeroMaximo){
-        asignarTextoElemento('p', 'Ya se sortearonn todos los numeros posibles');
+        asignarTextoElemento('p', 'Ya se sortearon todos los números posibles');
     } else {
 
 
@@ -66,8 +66,8 @@ function generarNumeroSecreto() {
 
 //Función para asignar las condiciones iniciales de un nuevo juego
 function condicionesIniciales(){
-    asignarTextoElemento('h1', 'Juego del numero secreto!');
-    asignarTextoElemento('p', `Indica un numero del 1 al ${numeroMaximo}`); 
+    asignarTextoElemento('h1', 'Juego del número secreto!');
+    asignarTextoElemento('p', `Indica un número del 1 al ${numeroMaximo}`); 
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
 }
